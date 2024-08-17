@@ -8,8 +8,6 @@ const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN;
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID;
 
 export const sendToSlack = async (message: string) => {
-  console.log(SLACK_BOT_TOKEN);
-  console.log(SLACK_CHANNEL_ID);
   try {
     const response = await axios.post('https://slack.com/api/chat.postMessage', {
       channel: SLACK_CHANNEL_ID,
