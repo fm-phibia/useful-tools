@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/node": "^22.4.0",
+    "axios": "^1.7.4",
+    "dotenv": "^16.4.5"
   }
 }
