@@ -26,7 +26,9 @@ chat.postMessage を利用する場合は、「SLACK_BOT_TOKEN」「SLACK_CHANNE
 
 参考: https://w1723855707-ntx771807.slack.com/apps/A0F7XDUAZ--incoming-webhook-?tab=more_info
 
-# 定期実行用
+## 定期実行用
+
+### 準備
 
 以下のコマンドで、TypeScript をトランスパイルして JavaScript にします。
 
@@ -51,4 +53,10 @@ which node
 
 ```bash
 chmod +x shell/run.sh
+```
+
+### 定期実行設定
+
+```bash
+crontab -e
 ```
